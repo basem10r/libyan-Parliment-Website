@@ -1,0 +1,50 @@
+.blogs 
+{
+	padding-top:50px;
+	padding-bottom:50px;
+	.item 
+	{
+		margin: 20px;
+	}
+	.blog-card 
+	{
+		background-color:$gray;
+		padding-bottom:20px;
+		text-align: left !important;
+		direction: ltr;
+	}
+	.image 
+	{
+		height: 180px;
+		overflow: hidden;
+	}
+	.text 
+	{
+		padding: 20px 20px;
+		height:310px;
+	}
+	.date
+	{
+		span 
+		{
+			color: $theme-color;
+			margin-bottom: 20px;
+		}
+	}
+	.desc 
+	{
+		p 
+		{
+			color: $gray1;
+		}
+	}
+	.button 
+	{
+		padding-left:20px;
+		padding-right:20px;
+		a 
+		{
+			font-size: 1.5em;
+		}
+	}
+}

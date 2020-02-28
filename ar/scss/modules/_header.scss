@@ -1,0 +1,76 @@
+/*===================================
+    BREADCRUMB AREA
+=====================================*/
+.breadcrumb-area {
+    background-color: $main;
+    position: relative;
+    z-index: 8;
+    color: #fff;
+    background-image: url(../img/breadcrumb-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.breadcrumb-area .breadcrumb-content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 123;
+    min-height: 210px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.breadcrumb-area .breadcrumb-content .breadcrumb__title {
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0;
+    color: #fff;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.breadcrumb-area .breadcrumb-content .breadcrumb__list {
+    margin-right: auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+.breadcrumb-area .breadcrumb-content .breadcrumb__list li {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    padding-right: 22px;
+    text-transform: uppercase;
+}
+.breadcrumb-area .breadcrumb-content .breadcrumb__list li:last-child {
+    padding-left: 0;
+}
+.breadcrumb-area .breadcrumb-content .breadcrumb__list li.active__list-item:after {
+    position: absolute;
+    content: '-';
+    top: 2px;
+    left: -20px;
+    padding: 0 6px;
+    font-size: 15px;
+}
+.breadcrumb-area .breadcrumb-content .breadcrumb__list li a {
+    color: #fff;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.breadcrumb-area .breadcrumb-content .breadcrumb__list li a:hover {
+    color: $theme-color;
+}
+.tp-parallax-wrap  .tp-parallax-container
+{
+    right: 539px !important;
+}

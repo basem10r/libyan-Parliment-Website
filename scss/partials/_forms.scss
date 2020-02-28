@@ -1,0 +1,54 @@
+/*=============================
+   FORM-SHARED
+ =============================*/
+.form-shared form {
+    position: relative;
+}
+.form-shared form .form-group {
+    margin-bottom: 30px;
+}
+.form-shared form .form-control,
+.form-shared form .textarea {
+    width: 100%;
+    height: auto;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: none;
+    background-color: #f7f7f7;
+    color: #232323;
+    padding: 19px 30px;
+    -webkit-box-shadow: 0 0 0 0;
+    -moz-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0;
+    font-weight: 500;
+    font-size: 16px;
+    outline: none;
+}
+.form-shared form .textarea {
+    height: 200px;
+}
+.form-shared form .search-submit {
+    border: none;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 30px;
+    background-color: transparent;
+    color: $main;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.form-shared form .search-submit:hover {
+    color: $theme-color;
+}
+.form-shared form .submit__btn {
+    margin-top: -12px;
+}

@@ -1,0 +1,47 @@
+.members 
+{
+	padding-top:50px;
+	padding-bottom:50px;
+	.nav 
+	{
+		margin-bottom: 50px;
+		li 
+		{
+			display: inline-block;
+		}
+	}
+	.nav-pills
+	{
+		li 
+		{
+			float: none;
+		}
+	}
+	.nav-pills>li.active>a, .nav-pills>li.active>a:focus
+	{
+		background: $theme-color;
+	}
+	.card 
+	{
+		background: $gray;
+		padding:20px;
+		margin-bottom: 20px;
+		img 
+		{
+			height: 80px;
+			width: 80px;
+			border: 3px solid $theme-color;
+			border-radius: 50%;
+
+		}
+		h4 
+		{
+			font-weight: bold;
+		}
+		p 
+		{
+			color: $theme-color;
+			font-size: 1.2em;
+		}
+	}
+}

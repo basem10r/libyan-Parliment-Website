@@ -1,0 +1,152 @@
+.header
+{
+	position: relative;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover
+{
+	color: $theme-color;
+}
+#side-menu 
+{
+	.navbar-nav 
+	{
+		@media #{$maxmobile}
+		{
+			margin-top: 50px;
+		}
+	}
+}
+.navbar-inverse
+{
+	margin-bottom: 0px;
+	direction: ltr;
+	background: $white;
+	border: 0;
+	padding-top:10px;
+	padding-bottom:10px;
+	z-index: 999;
+	border-radius: 0;
+	.personal-img 
+	{
+		img 
+		{
+			height: 50px;
+			width: 50px;
+			display: inline-block;
+		}
+	}
+	.dropdown-menu
+	{
+		right: auto;
+		left: 0;
+		li a 
+		{
+			margin-top: 0 !important;
+		}
+
+	}
+	.dropdown a 
+	{
+		text-decoration: none;
+	}
+	.dropdown .dropdown-menu li a 
+	{
+		color: $main;
+		&:hover
+		{
+			background-color:transparent;
+			color: $theme-color;
+		}
+	}
+	.nav .open>a, .nav .open>a:focus, .nav .open>a:hover
+	{
+		background-color:transparent;
+		border-color:none;
+	}
+	.navbar-toggle
+	{
+		margin-top: 20px;
+		float: left;
+		margin-left: 20px;
+		position: relative;	
+		background:$main;
+		border: 1px solid $main;
+		.icon-bar 
+		{
+			background-color:$white;
+		}
+	}
+	.navbar-collapse
+	{
+		@media #{$maxmobile}
+		{	
+			.navbar-nav
+			{
+				position: relative;
+				margin-top: 50px !important;
+			}
+		}
+	}
+	.navbar-brand
+	{
+		height: auto;
+		direction: ltr;
+		float: left !important;
+		img
+		{
+			width: 40%;
+			
+		}
+
+		padding: 0;
+		@media #{$maxSmall}
+		{
+			font-size: 2em;
+		}
+	}
+	.navbar-nav
+	{
+		@media #{$maxmobile}
+		{
+			margin-top: 50px !important;
+		}
+		li a 
+		{
+			margin-top: 20px;
+			color: $main;
+			padding:10px;
+			font-weight: bold;
+			@include transition();
+			&:hover,&:focus
+			{
+				color: darken($theme-color, 15%);
+			}
+			@media #{$maxSmall}
+			{
+				font-size: 0.8em;
+			}
+		}
+		.btn-primary
+		{
+			@include btn($purple,$purple,$white,20px);
+			padding-top:10px;
+			padding-bottom:10px;
+			@media #{$maxmobile}
+			{	
+				width:140px;
+			}
+		}
+		.active a
+		{
+			background-color: transparent;
+			color: $theme-color;
+			&:active,&:focus,&:hover
+			{
+				background-color:transparent;
+				color: darken($theme-color, 15%);
+			}
+		}
+	}
+}
+
+

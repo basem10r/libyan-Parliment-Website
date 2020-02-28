@@ -1,0 +1,65 @@
+
+.footer
+{
+	color: $white;
+	background-color:$main;
+	.text1
+	{
+		padding-top:5px;
+		padding-bottom:5px;
+		p span 
+		{
+			font-weight: bold;
+		}
+	}
+	.logo
+	{
+		width: 60%;
+	}
+	ul
+	{
+		margin-top: 20px;
+		padding-right:0;
+
+	} 
+	a 
+		{
+			text-decoration: none;
+		}
+	li 
+	{
+		list-style-type:none;
+		text-align: right;
+		padding: 0;
+		color: $gray;
+		margin-bottom: 10px;
+
+	}
+	p 
+	{
+		margin-top: 20px;
+		color: $gray;
+	}
+	.icons 
+	{
+	
+		.icon
+		{
+			margin-left: 20px;
+			margin-bottom: 20px;
+			@include transition();
+			&:hover,&:focus
+			{
+				background-color:$theme-color;
+				i 
+				{
+					color: $white;
+				}
+			}
+			i 
+			{
+				color: $theme-color;
+			}
+		}
+	}
+}

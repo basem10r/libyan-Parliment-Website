@@ -1,0 +1,92 @@
+.president 
+{
+	padding-top:50px;
+	padding-bottom:50px;
+	background: $gray;
+	.content{ 
+		margin-top: 50px;
+	}
+	.card 
+	{
+		position: relative;
+		overflow: hidden;
+		height: 400px;
+		margin-bottom: 20px;
+		@media #{$maxmobile}
+		{
+			height: 300px;
+		}
+		.image 
+		{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			img 
+			{
+				height: 400px;
+				@media #{$maxmobile}
+				{
+					height: 300px;
+				}
+				width: 100%;
+			}
+		}
+		&.card2
+		{
+			height: 190px;
+		}
+		&.havan 
+		{
+			background: $theme-color;
+		}
+		.footer
+		{
+			position: absolute;
+			bottom: 0;
+			padding: 20px;
+			left: 0;
+			width: 100%;
+			z-index: 9;
+			@include gradient2(180deg,rgba(0,0,0,0),rgba(0,0,0,0.4),rgba(0,0,0,1));
+			&.footer-none
+			{
+				background: transparent;
+			}
+			.date 
+			{
+				
+				span 
+				{
+					background: $theme-color;
+					padding: 5px;
+					color: $white;
+				}
+			}
+			.date1
+			{
+				span 
+				{
+					background: $white;
+					padding: 5px;
+					color: $theme-color;
+				}
+			} 
+
+			.text p 
+			{
+				font-size: 1.2em;
+				font-weight: bold;
+			}
+			.button a 
+			{
+				color: $white;
+				&:hover
+				{
+					color: $white;
+				}
+			} 
+
+		}
+	}
+}

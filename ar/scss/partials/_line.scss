@@ -1,0 +1,36 @@
+%linebefore
+{
+	&:before
+		{
+			    content: '';
+			    background-image: url(../images/line.png);
+			    background-repeat: no-repeat;
+			    position: absolute;
+			    display: block;
+			    z-index: 22;
+			    bottom: -130px;
+			    width: 7px;
+			    height: 100px;
+			    left: 50%;
+			    margin-left: -2px;
+		}
+}
+
+
+%lineafter
+{
+	&:after
+		{
+			    content: '';
+			    background-image: url(../images/line.png);
+			    background-repeat: no-repeat;
+			    position: absolute;
+			    display: block;
+			    z-index: 22;
+			    bottom: -130px;
+			    width: 7px;
+			    height: 100px;
+			    left: 50%;
+			    margin-left: -2px;
+		}
+}

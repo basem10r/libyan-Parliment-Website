@@ -1,0 +1,53 @@
+.register 
+{
+	position: relative;
+	color:$white;
+	background:url(../img/phone.jpg) fixed;
+	background-size:cover; 
+	background-position:50% 50%;
+	z-index: 10;
+	.seperator2 
+	{
+	  position: absolute;
+	  top:-1px;
+	  z-index: 9;
+	}
+	.seperator3 
+	{
+	  position: absolute;
+	  bottom:-1px;
+	  z-index: 9;
+	}
+	.desc
+	{
+		margin-top: 150px;
+		@media #{$maxmobile}
+		{
+			text-align: center;
+			margin-top: 30px;
+		}
+	}
+	h1 
+	{
+		font-size: 4em;
+		font-weight: 600;
+	}
+	p 
+	{
+		max-width: 500px;
+		// @media #{$maxmobile}
+		// {
+		// 	width: 400px;
+		// }
+	}
+	.device 
+	{
+		width: 60%;
+		position: relative;
+		z-index: 20;
+		@media #{$maxmobile}
+		{
+			width: 80%;
+		}
+	}
+}

@@ -1,0 +1,67 @@
+@media only screen and (min-width: 641px){
+.remodal {
+    max-width: 400px !important;
+}
+}
+
+@media only screen and (min-width: 641px){
+.remodalwidth {
+    max-width: 800px !important;
+}
+}
+@media only screen and (min-width: 641px){
+.modalwidth1 {
+    max-width: 600px !important;
+}
+}
+.remodal 
+{
+	p a 
+	{
+		color: $theme-color;
+	}
+	.logo 
+	{
+		width: 40%;
+	}
+
+	.form-group label 
+	{
+		text-align: left;
+		margin-left: 20px;
+		width: 100%;
+	}
+	.form-group input 
+	{
+		border-radius: 25px;
+	}
+	.checkbox 
+	{
+		label
+		{
+			text-align: left;
+			width: 100%;
+		}
+	}
+	.icon 
+	{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.avatar1
+	{
+		height: 60px;
+		width: 60px;
+	}
+	.delete
+	{
+		i 
+		{
+			color: $theme-color;
+		}
+	}
+	h3 span 
+	{
+		color: $theme-color;
+	}
+}

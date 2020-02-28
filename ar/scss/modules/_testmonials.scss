@@ -1,0 +1,54 @@
+.testmonials
+{
+	padding-top:50px;
+	padding-bottom:50px;
+	background: url(../img/4.jpg) no-repeat fixed;
+	background-size:cover;
+	background-position:50% 50%; 
+	position: relative;
+	h1 
+	{
+		position: relative;
+		z-index: 9;
+		color: $white;
+	}
+	.item 
+	{
+		padding-top:20px;
+		.card 
+		{
+			border-top-right-radius:35px;
+			border-bottom-left-radius:35px;
+			background: $white;
+			@include transition();
+			padding: 20px;
+			&:hover
+			{
+				border-top-right-radius:0px;
+			border-bottom-left-radius:0px;
+			}
+			.image 
+			{
+
+				img 
+				{
+					border: 3px solid $theme-color;
+					width: 35%;
+				}
+			}
+			.quote 
+			{
+				color: $gray1;
+			}
+		}
+		.button 
+		{
+			margin-top: 20px;
+			a 
+			{
+				font-size: 1.2em;
+				color: $theme-color;
+			}
+		}
+	}
+}

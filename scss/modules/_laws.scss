@@ -1,0 +1,140 @@
+.laws 
+{
+	background: $gray;
+	.card 
+	{
+		margin-top: 50px;
+		padding-top:30px;
+		background: $white;
+		position: relative;
+		.footer
+		{
+			width: 100%;
+			background: $theme-color;
+			height: 0px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			@include transition();
+		}
+		&:hover 
+		{
+			.footer 
+			{
+				background: $theme-color;
+				height: 5px;
+				width: 100%;
+			}
+		}
+		.date 
+		{
+			padding: 10px;
+			position: absolute;
+			background: $theme-color;
+			top: 0;
+			right: 0;
+			span 
+			{
+				color: $white;
+				font-weight: bold;
+				display: block;
+			}
+			.number 
+			{
+				font-size: 1.5em;
+			}
+		}
+		.text
+		{
+			padding:20px;
+			height: 180px;
+			span 
+			{
+				color: $theme-color;
+				font-weight: bold;
+			}
+			.number p 
+			{
+				font-size: 1.2em;
+			}
+			.law1 p 
+			{
+				font-weight: bold;
+				font-size: 1.1em;
+			}
+		}
+		.download-btn 
+		{
+			.btn 
+			{
+				background: transparent;
+				@include transition();
+				&:hover,&:focus 
+				{
+					color: $theme-color;
+				}
+				i 
+				{
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+}
+		.download-btn 
+		{
+			.btn 
+			{
+				background: transparent;
+				@include transition();
+				&:hover,&:focus 
+				{
+					color: $theme-color;
+				}
+				i 
+				{
+					margin-left: 5px;
+				}
+				&.yellow 
+				{
+					color: $theme-color;
+					&:hover,&:focus 
+					{
+						color: $main;
+					}
+
+				}
+			}
+		}
+
+.law
+{
+	padding-top:50px;
+	padding-bottom:50px;
+	.card 
+	{
+		margin-bottom: 20px;
+		padding:20px;
+		background: $gray;
+		span
+		{
+			color: $theme-color;
+			font-size: 1.5em;
+		}
+		p 
+		{
+			font-size: 1.3em;
+			font-weight: bold;
+		}
+		.btn 
+		{
+			padding: 0;
+		} 
+	
+	}
+
+}
+
+
+
+

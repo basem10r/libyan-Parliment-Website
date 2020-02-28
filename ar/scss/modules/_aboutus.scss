@@ -1,0 +1,37 @@
+.aboutus
+{
+	.lead
+	{
+		color: $gray;
+	}
+	.img-container
+	{
+		position: relative;
+		@media #{$maxmobile}
+		{
+			top: 20px;
+		}
+		.shape 
+		{
+			position: absolute;
+			@media #{$minMedium}
+			{
+				top:-70px;
+			}
+			top: -10px;
+			z-index: 2;
+		}
+		.meeting
+		{
+			position: relative;
+			z-index: 3;
+			width: 80%;
+			@media #{$maxmobile}
+			{
+				top: 30px;
+				width: 80%;
+			}
+			
+		}
+	}
+}

@@ -1,0 +1,106 @@
+.events 
+{
+	padding-bottom:100px;
+	.content
+	{
+		margin-top: 50px;
+	}
+	.card 
+	{
+		background-color:$white;
+		margin-bottom: 50px;
+		padding: 20px;
+		@include shadow(0px,19px,35px,0px,rgba($black, 0.2));
+		border-radius: 35px;
+		img 
+		{
+			border-radius: 35px;
+		}
+		.event-info
+		{
+			.event-box
+			{
+				h4
+				{
+					margin-bottom: 20px;
+				}
+
+				ul
+				{
+					padding-right: 0px;
+					li 
+					{
+						display: inline-block;
+						margin-left: 10px;
+						color: $gray;
+					}
+				} 
+			}
+			p
+			{
+				margin-top: 30px;
+				margin-bottom: 30px;
+				width: auto;
+				color: $gray;
+				font-size: 1.1em;
+			}
+			.link a
+			{
+				color:$orange;
+				text-decoration: none;
+				font-size: 1.3em;
+			}
+			.purple1 a 
+			{
+				color: $purple;
+			}
+			.green1 a
+			{
+				color: $green;
+			}
+		}
+		.date 
+		{
+			background-color:$orange;
+			color: $white;
+			width: 150px;
+			height: 150px;
+			font-size: 1.5em;
+			margin: auto;
+			border-radius: 35px;
+			padding-top:15%;
+			margin-top: 20%;
+			span
+			{
+				display: block;
+			}
+			@media #{$maxSmall}
+			{
+				height: 80px;
+				width: 80px;
+				border-radius: 10px;
+				font-size: 1em;
+				padding-top:20px;
+				margin-top: 20px;
+			}
+
+		}
+		.purple 
+		{
+			background-color:$purple;
+		}
+		.green 
+		{
+			background-color:$green;
+		}
+	}
+	.button .btn-primary
+	{
+		@include btn($purple,$purple,$white,30px);
+		@extend %btn-hover1;
+		&:hover
+		{
+			color: $purple;
+		}
+	}
+}
